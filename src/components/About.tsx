@@ -10,7 +10,7 @@ export function About() {
         </p>
       </div>
       <div className="flex items-center w-80">
-        <img src="./images/pfp.jpg" alt="Myself!" className="rounded-full"/>
+        <img src="./images/pfp.jpg" alt="Myself!" className="rounded-full border"/>
       </div>
     </header>
   );
