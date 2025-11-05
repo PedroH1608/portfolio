@@ -17,7 +17,7 @@ export function Scroll() {
       alt: "JavaScript",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-original-wordmark.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-plain-wordmark.svg",
       alt: "styled-components",
     },
     {
@@ -41,11 +41,11 @@ export function Scroll() {
       alt: "Tailwind CSS",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg",
       alt: "PostgreSQL",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
       alt: "Node.js",
     },
     {
@@ -53,7 +53,7 @@ export function Scroll() {
       alt: "Express",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg",
       alt: "Docker",
     },
     {
@@ -61,7 +61,7 @@ export function Scroll() {
       alt: "Prisma",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
       alt: "MongoDB",
     },
   ];

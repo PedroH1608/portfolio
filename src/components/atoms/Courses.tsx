@@ -1,24 +1,36 @@
+import { useTranslation } from "react-i18next";
+
 export function Courses() {
-  const education = [
+  const { t } = useTranslation();
+
+  const translatedEducation = t("courses.educationList", {
+    returnObjects: true,
+  }) as {
+    course: string;
+    period: string;
+  }[];
+
+  const staticEducationData = [
     {
-      logo: "public/images/unicv_logo.jpeg",
+      logo: "/images/unicv_logo.jpeg",
       alt: "UniCV Logo",
       institution: "UniCV - Centro Universitário Cidade Verde",
-      course: "Software Analysis and Development",
-      period: "January 2025 - January 2027",
     },
     {
-      logo: "public/images/devquest_logo.jpeg",
+      logo: "/images/devquest_logo.jpeg",
       alt: "DevQuest Logo",
       institution: "DevQuest - Dev em Dobro",
-      course: "Front-End and Back-End Development",
-      period: "February 2023 - August 2025",
     },
   ];
 
+  const education = translatedEducation.map((translated, index) => ({
+    ...translated,
+    ...staticEducationData[index],
+  }));
+
   return (
     <article className="flex flex-col gap-2">
-      <h2 className="text-xl">Education</h2>
+      <h2 className="text-xl">{t("courses.title")}</h2>
       <div className="flex flex-col gap-3">
         {education.map((edu, index) => (
           <div key={index} className="flex items-center justify-between">

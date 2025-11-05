@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 export function Projects() {
-  const projects = [
+  const { t } = useTranslation();
+  const translatedProjects = t("projects.projectList", {
+    returnObjects: true,
+  }) as { title: string; dates: string; description: string }[];
+
+  const staticProjectsData = [
     {
-      demo: "public/images/nextboxd_demo.gif",
-      title: "NextBoxd AI",
-      dates: "August 2025 - October 2025",
-      description:
-        "NextBoxd AI is an intelligent movie suggestion application. It uses AI (OpenRouter) to provide personalized recommendations based on your prompts or by analyzing uploaded CSV watchlists. It fetches detailed movie info (posters, trailers) from TMDB API.",
+      demo: "/images/nextboxd_demo.gif",
       stack: [
         "React",
         "TypeScript",
@@ -20,16 +23,21 @@ export function Projects() {
       source: "https://github.com/PedroH1608/nextboxd-ai",
     },
     {
-      title: "Racing Leagues (WIP)",
-      dates: "October 2025 - Present",
-      description: "Website for finding and creating sim-racing leagues.",
       stack: ["React", "TypeScript", "TailwindCSS", "Node.js"],
     },
   ];
+
+  const projects = translatedProjects.map((translated, index) => ({
+    ...translated,
+    ...staticProjectsData[index],
+  }));
+
   return (
     <section className="flex flex-col px-40 py-8 border-b items-center">
-      <h2 className="text-xl mb-2">Projects</h2>
-      <p className="text-justify text-2xl font-bold">My latest projects</p>
+      <h2 className="text-xl mb-2">{t("projects.title")}</h2>
+      <p className="text-justify text-2xl font-bold">
+        {t("projects.subtitle")}
+      </p>
       <figure className="flex items-stretch gap-3">
         {projects.map((project, index) => (
           <article
@@ -67,11 +75,11 @@ export function Projects() {
                       className="bg-white flex items-center gap-1 p-1.5 rounded-full border hover:bg-gray-200 transition-all duration-200"
                     >
                       <img
-                        src="public/icons/globe.svg"
+                        src="/icons/globe.svg"
                         alt="Globe Icon"
                         className="w-4.5"
                       />
-                      <p className="text-xs">Website</p>
+                      <p className="text-xs">{t("projects.website")}</p>
                     </a>
                   )}
                   <a
@@ -83,7 +91,7 @@ export function Projects() {
                       alt="GitHub Icon"
                       className="w-4"
                     />
-                    <p className="text-xs">Source</p>
+                    <p className="text-xs">{t("projects.source")}</p>
                   </a>
                 </div>
               </div>
