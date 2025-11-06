@@ -9,6 +9,17 @@
   }
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --animate-infinite-scroll: infinite-scroll 10s linear infinite;
+
+  --background: #ffffff;
+  --background-dark: #121212;
+  --text-primary: #000000;
+  --text-primary-dark: #ffffff;
+  --foreground: #555555;
+  --foreground-dark: #aaaaaa;
+  --accent: #0070f3;
+  --accent-dark: #79b8ff;
 }

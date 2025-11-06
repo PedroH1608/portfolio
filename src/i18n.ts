@@ -19,7 +19,7 @@ i18n
             title: "Education",
             educationList: [
               {
-                course: "Software Analysis and Development",
+                course: "Systems Analysis and Development",
                 period: "January 2025 - January 2027",
               },
               {
@@ -66,7 +66,7 @@ i18n
       "pt-BR": {
         translation: {
           about: {
-            greeting: "Olá, eu sou o Pedro!",
+            greeting: "Olá, sou o Pedro!",
             intro:
               "Desenvolvedor Full Stack com 2 anos de experiência na construção e implantação de aplicações web. Proficiente em práticas de front-end, back-end e DevOps. Atualmente atuando como desenvolvedor freelancer.",
           },
@@ -74,7 +74,7 @@ i18n
             title: "Formação",
             educationList: [
               {
-                course: "Análise e Desenvolvimento de Software",
+                course: "Análise e Desenvolvimento de Sistemas",
                 period: "Janeiro 2025 - Janeiro 2027",
               },
               {

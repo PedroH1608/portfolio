@@ -1,17 +1,15 @@
-import { About } from "./components/About";
-import { Education } from "./components/Education";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { Menu } from "./components/atoms/Menu";
+import { About } from "./components/organisms/About";
+import { Education } from "./components/organisms/Education";
+import { Projects } from "./components/organisms/Projects";
+import { Footer } from "./components/organisms/Footer";
+import { Menu } from "./components/organisms/Menu";
 
 function App() {
   return (
-    <main className="min-h-screen flex flex-col bg-background items-center">
+    <main className="min-h-screen flex flex-col items-center">
       <About />
       <Education />
       <Projects />
-      <Contact />
       <Footer />
       <Menu />
     </main>

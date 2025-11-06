@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { CourseItem } from "../molecules/CourseItem";
 
 export function Courses() {
   const { t } = useTranslation();
@@ -29,22 +30,11 @@ export function Courses() {
   }));
 
   return (
-    <article className="flex flex-col gap-2">
-      <h2 className="text-xl">{t("courses.title")}</h2>
-      <div className="flex flex-col gap-3">
+    <article className="flex flex-col gap-2 2xl:gap-5">
+      <h2 className="text-xl 2xl:text-center">{t("courses.title")}</h2>
+      <div className="flex flex-col gap-3 2xl:gap-6 2xl:flex-row 2xl:justify-between">
         {education.map((edu, index) => (
-          <div key={index} className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="flex items-center w-13">
-                <img src={edu.logo} alt={edu.alt} className="rounded-full" />
-              </div>
-              <div className="text-sm">
-                <h3>{edu.institution}</h3>
-                <p>{edu.course}</p>
-              </div>
-            </div>
-            <p>{edu.period}</p>
-          </div>
+          <CourseItem key={index} course={edu} />
         ))}
       </div>
     </article>
