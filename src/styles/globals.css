@@ -9,17 +9,26 @@
   }
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --animate-infinite-scroll: infinite-scroll 10s linear infinite;
 
-  --background: #ffffff;
-  --background-dark: #121212;
-  --text-primary: #000000;
-  --text-primary-dark: #ffffff;
-  --foreground: #555555;
-  --foreground-dark: #aaaaaa;
-  --accent: #0070f3;
-  --accent-dark: #79b8ff;
+  --color-background: #ffffff;
+  --color-background-dark: #121212;
+
+  --color-border: #121212;
+  --color-border-dark: #333333;
+
+  --color-text-primary: #000000;
+  --color-text-primary-dark: #ffffff;
+
+  --color-button: #ffffff;
+  --color-button-dark: #555555;
+  --color-button-hover: #e5e7eb;
+  --color-button-hover-dark: #777777;
+
+  --color-foreground: #555555;
+  --color-foreground-dark: #aaaaaa;
+
+  --color-accent: #0070f3;
+  --color-accent-dark: #79b8ff;
 }
