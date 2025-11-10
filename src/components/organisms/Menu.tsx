@@ -29,7 +29,9 @@ export function Menu() {
             alt="LinkedIn Logo"
             className="w-5"
           />
-          <span className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}>
+          <span
+            className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}
+          >
             LinkedIn
           </span>
         </a>
@@ -42,7 +44,9 @@ export function Menu() {
             alt="GitHub Icon"
             className="w-5"
           />
-          <span className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}>
+          <span
+            className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}
+          >
             GitHub
           </span>
         </a>
@@ -55,7 +59,9 @@ export function Menu() {
             alt="Light Mode Icon"
             className="w-5"
           />
-          <span className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}>
+          <span
+            className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}
+          >
             {t("menu.theme")}
           </span>
         </button>
@@ -69,7 +75,9 @@ export function Menu() {
               alt="Language Button"
               className="w-5"
             />
-            <span className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}>
+            <span
+              className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2 py-1 ${themeConfig[theme].layout.buttonDescriptionColor} ${themeConfig[theme].layout.textColor} ${themeConfig[theme].layout.borderColor} text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible border`}
+            >
               {t("menu.language")}
             </span>
           </button>
@@ -79,13 +87,13 @@ export function Menu() {
             >
               <button
                 onClick={() => changeLanguage("en")}
-                className={`px-3 py-1 text-sm ${themeConfig[theme].layout.buttonHoverColor} rounded-md transition-colors`}
+                className={`px-3 py-1 text-sm ${themeConfig[theme].layout.buttonHoverColor} rounded-md transition-colors cursor-pointer`}
               >
                 <span>English</span>
               </button>
               <button
                 onClick={() => changeLanguage("pt-BR")}
-                className={`px-3 py-1 text-sm ${themeConfig[theme].layout.buttonHoverColor} rounded-md transition-colors`}
+                className={`px-3 py-1 text-sm ${themeConfig[theme].layout.buttonHoverColor} rounded-md transition-colors cursor-pointer`}
               >
                 <span>Portuguese (Brazil)</span>
               </button>

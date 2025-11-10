@@ -26,9 +26,8 @@
   --color-button-hover: #e5e7eb;
   --color-button-hover-dark: #777777;
 
-  --color-foreground: #555555;
-  --color-foreground-dark: #aaaaaa;
+  --color-foreground: #d1d5dc;
+  --color-foreground-dark: #2d2d2d;
 
-  --color-accent: #0070f3;
-  --color-accent-dark: #79b8ff;
+  --color-accent: #2b7fff;
 }
