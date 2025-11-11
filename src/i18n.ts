@@ -28,6 +28,9 @@ i18n
               },
             ],
           },
+          skills: {
+            title: "Skills",
+          },
           projects: {
             title: "Projects",
             subtitle: "My latest projects",
@@ -82,6 +85,9 @@ i18n
                 period: "Fevereiro 2023 - Agosto 2025",
               },
             ],
+          },
+          skills: {
+            title: "Habilidades",
           },
           projects: {
             title: "Projetos",
